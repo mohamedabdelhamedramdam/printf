@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
@@ -25,6 +26,6 @@ int (*get_format_func(char dir))(va_list args);
 int print_char(va_list args);
 int print_int(va_list args);
 int print_str(va_list args);
-int print_percent(void);
+int print_percent(va_list args);
 
 #endif /* _PRINTF */

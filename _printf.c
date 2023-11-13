@@ -37,10 +37,10 @@ int _printf(const char *format, ...)
 			if (get_format != NULL)
 				count += get_format(ap);
 			else
-				{
-					count += _putchar('%');
-					count += _putchar(directive);
-				}
+			{
+				count += _putchar('%');
+				count += _putchar(directive);
+			}
 		}
 	}
 
