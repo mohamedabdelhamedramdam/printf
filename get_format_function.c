@@ -17,7 +17,7 @@ int (*get_format_func(char dir))(va_list args)
 		{'s', print_str},
 		{'b', print_binary},
 		{'u', print_unsigned},
-        {'o', print_unsigned_octal},
+		{'o', print_unsigned_octal},
 		{0, NULL}
 	};
 	int i;
