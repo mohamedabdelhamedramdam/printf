@@ -26,6 +26,12 @@ int (*get_format_func(char dir))(va_list args);
 int print_char(va_list args);
 int print_int(va_list args);
 int print_str(va_list args);
-int print_percent(va_list args);
+int print_binary(va_list args);
+int print_unsigned(va_list args);
+int print_unsigned_octal(va_list args);
+
+int put_int(int i);
+int print_binary_recursive(unsigned int i);
+int print_octal_recursive(int num, int count);
 
 #endif /* _PRINTF */

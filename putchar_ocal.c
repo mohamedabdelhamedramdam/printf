@@ -19,6 +19,7 @@ int print_unsigned_octal(va_list args)
 /**
  * print_octal_recursive - recursive calls to print octal conversions
  * @num: number to convert
+ * @count: number of digits
  *
  * Return: count of digits printed
 */

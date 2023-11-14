@@ -10,26 +10,10 @@ int print_int(va_list args)
 {
 	int num;
 	int count;
-	int divisor;
 
 	num = va_arg(args, int);
 	count = 0;
-	divisor = 1;
-	if (num < 0)
-	{
-		count += _putchar('-');
-		num = -num;
-	}
-	while (num / divisor > 9)
-	{
-		divisor *= 10;
-	}
-	while (divisor != 0)
-	{
-		count += _putchar('0' + num / divisor);
-		num %= divisor;
-		divisor /= 10;
-	}
 
+	count += put_int(num);
 	return (count);
 }
