@@ -12,6 +12,8 @@ int print_str(va_list args)
 	int count;
 
 	count = 0;
+	if (str == NULL)
+		str = "(null)";
 	while (*str != '\0')
 	{
 		count += _putchar(*str);
